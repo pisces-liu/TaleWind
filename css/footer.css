@@ -1,0 +1,26 @@
+/* footer */
+
+.footer {
+    width: 100%;
+    height: 100px;
+    background: #157658;
+    clear: both;
+}
+
+.footer p {
+    text-align: center;
+    color: #FFFFFF;
+    font-family: "times new roman",sans-serif;
+}
+
+.footer .motto {
+    font-size: 30px;
+    height: 80px;
+    line-height: 80px;
+}
+
+.footer .author {
+    font-size: 14px;
+    line-height: 14px;
+    text-align: center;
+}

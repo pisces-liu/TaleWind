@@ -1,0 +1,911 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>taleWind</title>
+    <!-- 样式初始化 -->
+    <link rel="stylesheet" href="css/reset.css">
+    <!-- 导航栏样式 -->
+    <link rel="stylesheet" href="css/nav.css">
+    <!-- 图片轮播样式 -->
+    <link rel="stylesheet" href="css/Slider.css">
+    <!-- 图片无限滚动样式 -->
+    <link rel="stylesheet" href="css/Scroll.css">
+    <!-- 新书速递部分样式 -->
+    <link rel="stylesheet" href="css/new_book.css">
+    <!-- 广告banner横幅样式 -->
+    <link rel="stylesheet" href="css/banner.css">
+    <!-- 新书速递轮播部分样式 -->
+    <link rel="stylesheet" href="css/Slider_new_book.css">
+    <!-- 好书精选部分样式-->
+    <link rel="stylesheet" href="css/select_book.css">
+    <!-- footer-->
+    <link rel="stylesheet" href="css/footer.css">
+</head>
+
+<body>
+<div class="container">
+    <!-- nav start-->
+    <div class="nav">
+        <ul class="nav-left">
+            <li>
+                <a href="#">首页</a>
+            </li>
+            <li>
+                <a href="#">图书</a>
+                <ul class="sub-item">
+                    <li>
+                        <a href="#">文学</a>
+                    </li>
+                    <li>
+                        <a href="#">管理学</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">电子书</a>
+                <ul class="sub-item">
+                    <li>
+                        <a href="#">特价</a>
+                    </li>
+                    <li>
+                        <a href="#">小说</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">期刊</a>
+                <ul class="sub-item">
+                    <li>
+                        <a href="#">第一财经</a>
+                    </li>
+                    <li>
+                        <a href="#">读书</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <ul class="login">
+            <li>
+                <a href="#">登陆</a>
+            </li>
+            <li>
+                <a href="#">我的</a>
+            </li>
+        </ul>
+    </div>
+    <!-- nav end-->
+
+    <!-- Slider start-->
+    <div class="slider">
+        <ul>
+            <li class="active"><img src="images/banner/1.JPG" alt=""></li>
+            <li><img src="images/banner/6.jpg" alt=""></li>
+            <li><img src="images/banner/3.jpg" alt=""></li>
+            <li><img src="images/banner/6.jpg" alt=""></li>
+            <li><img src="images/banner/5.jpg" alt=""></li>
+        </ul>
+        <span class="left">&lt;</span>
+        <span class="right">&gt;</span>
+        <ol class="dots">
+            <li class="active"></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ol>
+    </div>
+    <!-- Slider end-->
+
+    <!-- Scroll start-->
+    <div class="scroll">
+        <ul class="scroll_ul">
+            <li class="scroll_ul_li"><img src="images/scroll/1.jpg" alt=""></li>
+            <li class="scroll_ul_li"><img src="images/scroll/2.jpg" alt=""></li>
+            <li class="scroll_ul_li"><img src="images/scroll/3.jpg" alt=""></li>
+            <li class="scroll_ul_li"><img src="images/scroll/4.jpg" alt=""></li>
+            <li class="scroll_ul_li"><img src="images/scroll/5.jpg" alt=""></li>
+            <li class="scroll_ul_li"><img src="images/scroll/6.jpg" alt=""></li>
+            <li class="scroll_ul_li"><img src="images/scroll/7.jpg" alt=""></li>
+            <li class="scroll_ul_li"><img src="images/scroll/8.jpg" alt=""></li>
+            <li class="scroll_ul_li"><img src="images/scroll/9.jpg" alt=""></li>
+            <li class="scroll_ul_li"><img src="images/scroll/10.jpg" alt=""></li>
+            <li class="scroll_ul_li"><img src="images/scroll/11.jpg" alt=""></li>
+            <li class="scroll_ul_li"><img src="images/scroll/12.jpg" alt=""></li>
+            <li class="scroll_ul_li"><img src="images/scroll/13.jpg" alt=""></li>
+            <li class="scroll_ul_li"><img src="images/scroll/14.jpg" alt=""></li>
+            <li class="scroll_ul_li"><img src="images/scroll/15.jpg" alt=""></li>
+            <li class="scroll_ul_li"><img src="images/scroll/16.jpg" alt=""></li>
+            <li class="scroll_ul_li"><img src="images/scroll/17.jpg" alt=""></li>
+            <!-- 为了让图片滚动时视觉上一致克隆第一 二张图片到 ul 的结尾 -->
+            <li class="scroll_ul_li"><img src="images/scroll/1.jpg" alt=""></li>
+            <li class="scroll_ul_li"><img src="images/scroll/2.jpg" alt=""></li>
+            <li class="scroll_ul_li"><img src="images/scroll/3.jpg" alt=""></li>
+            <li class="scroll_ul_li"><img src="images/scroll/4.jpg" alt=""></li>
+            <li class="scroll_ul_li"><img src="images/scroll/5.jpg" alt=""></li>
+            <li class="scroll_ul_li"><img src="images/scroll/6.jpg" alt=""></li>
+            <li class="scroll_ul_li"><img src="images/scroll/7.jpg" alt=""></li>
+        </ul>
+    </div>
+    <!-- Scroll end-->
+
+    <!-- 新书速递 -->
+    <div class="new_book">
+        <h1 class="sub-title">新书速递</h1>
+        <!-- 热门标签 -->
+        <div class="left">
+            <div class="tag">
+                <span class="hot_tag">热门标签</span>
+                <span class="all_tags"><a href="#">所有热门标签»</a></span>
+            </div>
+            <!--tags-->
+            <ul class="tag_list">
+                <li class="tag_list_item">
+                    <ul>
+                        <li class="tags_sub_title">文学</li>
+                        <li>
+                            <a href="#">小说</a>
+                        </li>
+                        <li>
+                            <a href="#">随笔</a>
+                        </li>
+                        <li>
+                            <a href="#">日本文学</a>
+                        </li>
+                        <li>
+                            <a href="#">散文</a>
+                        </li>
+                        <li>
+                            <a href="#">诗歌</a>
+                        </li>
+                        <li>
+                            <a href="#">名著</a>
+                        </li>
+                        <li>
+                            <a href="#">港台</a>
+                        </li>
+                        <li>
+                            <a href="#">小说</a>
+                        </li>
+                        <li>
+                            <a href="#">更多»</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="tag_list_item">
+                    <ul>
+                        <li class="tags_sub_title">流行</li>
+                        <li>
+                            <a href="#">漫画</a>
+                        </li>
+                        <li>
+                            <a href="#">推理</a>
+                        </li>
+                        <li>
+                            <a href="#">绘本</a>
+                        </li>
+                        <li>
+                            <a href="#">青春</a>
+                        </li>
+                        <li>
+                            <a href="#">科幻</a>
+                        </li>
+                        <li>
+                            <a href="#">言情</a>
+                        </li>
+                        <li>
+                            <a href="#">奇幻</a>
+                        </li>
+                        <li>
+                            <a href="#">武侠</a>
+                        </li>
+                        <li>
+                            <a href="#">更多»</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="tag_list_item">
+                    <ul>
+                        <li class="tags_sub_title">文化</li>
+                        <li>
+                            <a href="#">历史</a>
+                        </li>
+                        <li>
+                            <a href="#">哲学</a>
+                        </li>
+                        <li>
+                            <a href="#">传记</a>
+                        </li>
+                        <li>
+                            <a href="#">设计</a>
+                        </li>
+                        <li>
+                            <a href="#">建筑</a>
+                        </li>
+                        <li>
+                            <a href="#">电影</a>
+                        </li>
+                        <li>
+                            <a href="#">回忆录</a>
+                        </li>
+                        <li>
+                            <a href="#">音乐</a>
+                        </li>
+                        <li>
+                            <a href="#">更多»</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="tag_list_item">
+                    <ul>
+                        <li class="tags_sub_title">生活</li>
+                        <li>
+                            <a href="#">旅行</a>
+                        </li>
+                        <li>
+                            <a href="#">励志</a>
+                        </li>
+                        <li>
+                            <a href="#">教育</a>
+                        </li>
+                        <li>
+                            <a href="#">职场</a>
+                        </li>
+                        <li>
+                            <a href="#">美食</a>
+                        </li>
+                        <li>
+                            <a href="#">灵修</a>
+                        </li>
+                        <li>
+                            <a href="#">健康</a>
+                        </li>
+                        <li>
+                            <a href="#">家居</a>
+                        </li>
+                        <li>
+                            <a href="#">更多»</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="tag_list_item">
+                    <ul>
+                        <li class="tags_sub_title">经管</li>
+                        <li>
+                            <a href="#">经济学</a>
+                        </li>
+                        <li>
+                            <a href="#">管理</a>
+                        </li>
+                        <li>
+                            <a href="#">商业</a>
+                        </li>
+                        <li>
+                            <a href="#">金融</a>
+                        </li>
+                        <li>
+                            <a href="#">营销</a>
+                        </li>
+                        <li>
+                            <a href="#">理财</a>
+                        </li>
+                        <li>
+                            <a href="#">股票</a>
+                        </li>
+                        <li>
+                            <a href="#">企业史</a>
+                        </li>
+                        <li>
+                            <a href="#">更多»</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="tag_list_item">
+                    <ul>
+                        <li class="tags_sub_title">科技</li>
+                        <li>
+                            <a href="#">科普</a>
+                        </li>
+                        <li>
+                            <a href="#">互联网</a>
+                        </li>
+                        <li>
+                            <a href="#">编程</a>
+                        </li>
+                        <li>
+                            <a href="#">交互设计</a>
+                        </li>
+                        <li>
+                            <a href="#">算法</a>
+                        </li>
+                        <li>
+                            <a href="#">通信</a>
+                        </li>
+                        <li>
+                            <a href="#">神经网络</a>
+                        </li>
+                        <li>
+                            <a href="#">更多»</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <!-- 书籍展示 -->
+        <div class="right">
+            <div class="slider_new_book">
+                <ul class="slider_new_book_ul">
+                    <li class="active slider_new_book_ul_li">
+                        <ul class="inner_book_show">
+                            <li>
+                                <img class="book_img" src="images/tab/novel/1.jpg" alt=""/>
+                                <a href="#" class="book_title">皮拉内西</a>
+                                <p class="book_author">[英国] 苏珊娜·克拉克 </p>
+                            </li>
+                            <li>
+                                <img class="book_img" src="images/tab/novel/2.jpg" alt=""/>
+                                <a href="#" class="book_title">死梦者之歌与阴郁的抄写员</a>
+                                <p class="book_author"> [美] 托马斯·里戈蒂 / Thomas</p>
+                            </li>
+                            <li>
+                                <img class="book_img" src="images/tab/novel/3.jpg" alt=""/>
+                                <a href="#" class="book_title">82年生的金智英</a>
+                                <p class="book_author">[韩]赵南柱 </p>
+                            </li>
+                            <li>
+                                <img class="book_img" src="images/tab/novel/4.jpg" alt=""/>
+                                <a href="#" class="book_title">被弃养的女孩</a>
+                                <p class="book_author">[意]多娜泰拉?迪皮耶特兰托尼奥</p>
+                            </li>
+                            <li>
+                                <img class="book_img" src="images/tab/novel/5.jpg" alt=""/>
+                                <a href="#" class="book_title">最后来的是乌鸦</a>
+                                <p class="book_author">[意] 伊塔洛·卡尔维诺</p>
+                            </li>
+                            <li>
+                                <img class="book_img" src="images/tab/novel/6.jpg" alt=""/>
+                                <a href="#" class="book_title">山魈考残编</a>
+                                <p class="book_author">黎幺</p>
+                            </li>
+                            <li>
+                                <img class="book_img" src="images/tab/novel/7.jpg" alt=""/>
+                                <a href="#" class="book_title">夜莺</a>
+                                <p class="book_author">[美]克莉丝汀·汉娜</p>
+                            </li>
+                            <li>
+                                <img class="book_img" src="images/tab/novel/8.jpg" alt=""/>
+                                <a href="#" class="book_title">米拉的猜想</a>
+                                <p class="book_author">[英] 安格斯·班克罗夫特</p>
+                            </li>
+                            <li>
+                                <img class="book_img" src="images/tab/novel/9.jpg" alt=""/>
+                                <a href="#" class="book_title">啊朋友再见</a>
+                                <p class="book_author">宋阿曼</p>
+                            </li>
+                            <li>
+                                <img class="book_img" src="images/tab/novel/10.jpg" alt=""/>
+                                <a href="#" class="book_title">白兔</a>
+                                <p class="book_author">[日] 伊坂幸太郎</p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="slider_new_book_ul_li">
+                        <ul class="inner_book_show">
+                            <li>
+                                <img class="book_img" src="images/book/1.jpg" alt=""/>
+                                <a href="#" class="book_title">音乐的阐释</a>
+                                <p class="book_author">[美]爱德华·W</p>
+                            </li>
+                            <li>
+                                <img class="book_img" src="images/book/2.jpg" alt=""/>
+                                <a href="#" class="book_title">音乐的阐释</a>
+                                <p class="book_author">[美]爱德华·W</p>
+                            </li>
+                            <li>
+                                <img class="book_img" src="images/book/3.jpg" alt=""/>
+                                <a href="#" class="book_title">音乐的阐释</a>
+                                <p class="book_author">[美]爱德华·W</p>
+                            </li>
+                            <li>
+                                <img class="book_img" src="images/book/4.jpg" alt=""/>
+                                <a href="#" class="book_title">音乐的阐释</a>
+                                <p class="book_author">[美]爱德华·W</p>
+                            </li>
+                            <li>
+                                <img class="book_img" src="images/book/5.jpg" alt=""/>
+                                <a href="#" class="book_title">音乐的阐释</a>
+                                <p class="book_author">[美]爱德华·W</p>
+                            </li>
+                            <li>
+                                <img class="book_img" src="images/book/6.jpg" alt=""/>
+                                <a href="#" class="book_title">音乐的阐释</a>
+                                <p class="book_author">[美]爱德华·W</p>
+                            </li>
+                            <li>
+                                <img class="book_img" src="images/book/7.jpg" alt=""/>
+                                <a href="#" class="book_title">音乐的阐释</a>
+                                <p class="book_author">[美]爱德华·W</p>
+                            </li>
+                            <li>
+                                <img class="book_img" src="images/book/8.jpg" alt=""/>
+                                <a href="#" class="book_title">音乐的阐释</a>
+                                <p class="book_author">[美]爱德华·W</p>
+                            </li>
+                            <li>
+                                <img class="book_img" src="images/book/9.jpg" alt=""/>
+                                <a href="#" class="book_title">音乐的阐释</a>
+                                <p class="book_author">[美]爱德华·W</p>
+                            </li>
+                            <li>
+                                <img class="book_img" src="images/book/10.jpg" alt=""/>
+                                <a href="#" class="book_title">音乐的阐释</a>
+                                <p class="book_author">[美]爱德华·W</p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="slider_new_book_ul_li">
+                        <ul class="inner_book_show">
+                            <li>
+                                <img class="book_img" src="images/tab/leterature/1.jpg" alt=""/>
+                                <a href="#" class="book_title">莎士比亚、乌托邦与革命</a>
+                                <p class="book_author">张沛</p>
+                            </li>
+                            <li>
+                                <img class="book_img" src="images/tab/leterature/2.jpg" alt=""/>
+                                <a href="#" class="book_title">水浒传的诞生</a>
+                                <p class="book_author">孙述宇</p>
+                            </li>
+                            <li>
+                                <img class="book_img" src="images/tab/leterature/3.jpg" alt=""/>
+                                <a href="#" class="book_title">见笑集</a>
+                                <p class="book_author">黄永玉</p>
+                            </li>
+                            <li>
+                                <img class="book_img" src="images/tab/leterature/4.jpg" alt=""/>
+                                <a href="#" class="book_title">我身体里的人造星星</a>
+                                <p class="book_author">[爱尔兰] 希内德·格利森 </p>
+                            </li>
+                            <li>
+                                <img class="book_img" src="images/tab/leterature/5.jpg" alt=""/>
+                                <a href="#" class="book_title">小说现代中国</a>
+                                <p class="book_author"> 杨早 / 孟岳 / 黄山 / 凤梨</p>
+                            </li>
+                            <li>
+                                <img class="book_img" src="images/tab/leterature/6.jpg" alt=""/>
+                                <a href="#" class="book_title">部分诗学与普通读者</a>
+                                <p class="book_author">许志强</p>
+                            </li>
+                            <li>
+                                <img class="book_img" src="images/tab/leterature/7.jpg" alt=""/>
+                                <a href="#" class="book_title">不要温顺地走进那个良宵</a>
+                                <p class="book_author">[英] 狄兰·托马斯</p>
+                            </li>
+                            <li>
+                                <img class="book_img" src="images/tab/leterature/8.jpg" alt=""/>
+                                <a href="#" class="book_title">说不尽的废名</a>
+                                <p class="book_author">陈建军</p>
+                            </li>
+                            <li>
+                                <img class="book_img" src="images/tab/leterature/9.jpg" alt=""/>
+                                <a href="#" class="book_title">八旗心象</a>
+                                <p class="book_author">刘大先</p>
+                            </li>
+                            <li>
+                                <img class="book_img" src="images/tab/leterature/10.jpg" alt=""/>
+                                <a href="#" class="book_title">切境</a>
+                                <p class="book_author">庆山</p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="slider_new_book_ul_li">
+                        <ul class="inner_book_show">
+                            <li>
+                                <img class="book_img" src="images/tab/all/1.jpg" alt=""/>
+                                <a href="#" class="book_title">观看绘画</a>
+                                <p class="book_author">[英]肯尼斯·克拉克（Kenneth Clark）</p>
+                            </li>
+                            <li>
+                                <img class="book_img" src="images/tab/all/2.jpg" alt=""/>
+                                <a href="#" class="book_title">山魈考残编</a>
+                                <p class="book_author">黎幺</p>
+                            </li>
+                            <li>
+                                <img class="book_img" src="images/tab/all/3.jpg" alt=""/>
+                                <a href="#" class="book_title">张医生与王医生</a>
+                                <p class="book_author">伊险峰 / 杨樱</p>
+                            </li>
+                            <li>
+                                <img class="book_img" src="images/tab/all/4.jpg" alt=""/>
+                                <a href="#" class="book_title">森林之花</a>
+                                <p class="book_author">[英] 玛格丽特·米 </p>
+                            </li>
+                            <li>
+                                <img class="book_img" src="images/tab/all/5.jpg" alt=""/>
+                                <a href="#" class="book_title">身体、空间与后现代性</a>
+                                <p class="book_author">汪民安</p>
+                            </li>
+                            <li>
+                                <img class="book_img" src="images/tab/all/6.jpg" alt=""/>
+                                <a href="#" class="book_title">劫后“天堂”</a>
+                                <p class="book_author">巫仁恕</p>
+                            </li>
+                            <li>
+                                <img class="book_img" src="images/tab/all/7.jpg" alt=""/>
+                                <a href="#" class="book_title">全民基本收入</a>
+                                <p class="book_author">[比利时]菲利普·范·帕里斯</p>
+                            </li>
+                            <li>
+                                <img class="book_img" src="images/tab/all/8.jpg" alt=""/>
+                                <a href="#" class="book_title">茶叶与鸦片</a>
+                                <p class="book_author">仲伟民</p>
+                            </li>
+                            <li>
+                                <img class="book_img" src="images/tab/all/9.jpg" alt=""/>
+                                <a href="#" class="book_title">魔都镜像</a>
+                                <p class="book_author">徐静波 </p>
+                            </li>
+                            <li>
+                                <img class="book_img" src="images/tab/all/10.jpg" alt=""/>
+                                <a href="#" class="book_title">设计人类学</a>
+                                <p class="book_author">设计人类学</p>
+                            </li>
+                        </ul>
+
+                    </li>
+                    <li class="slider_new_book_ul_li">
+                        <ul class="inner_book_show">
+                            <li>
+                                <img class="book_img" src="images/tab/leterature/1.jpg" alt=""/>
+                                <a href="#" class="book_title">莎士比亚、乌托邦与革命</a>
+                                <p class="book_author">张沛</p>
+                            </li>
+                            <li>
+                                <img class="book_img" src="images/tab/leterature/2.jpg" alt=""/>
+                                <a href="#" class="book_title">水浒传的诞生</a>
+                                <p class="book_author">孙述宇</p>
+                            </li>
+                            <li>
+                                <img class="book_img" src="images/tab/leterature/3.jpg" alt=""/>
+                                <a href="#" class="book_title">见笑集</a>
+                                <p class="book_author">黄永玉</p>
+                            </li>
+                            <li>
+                                <img class="book_img" src="images/tab/leterature/4.jpg" alt=""/>
+                                <a href="#" class="book_title">我身体里的人造星星</a>
+                                <p class="book_author">[爱尔兰] 希内德·格利森 </p>
+                            </li>
+                            <li>
+                                <img class="book_img" src="images/tab/leterature/5.jpg" alt=""/>
+                                <a href="#" class="book_title">小说现代中国</a>
+                                <p class="book_author"> 杨早 / 孟岳 / 黄山 / 凤梨</p>
+                            </li>
+                            <li>
+                                <img class="book_img" src="images/tab/leterature/6.jpg" alt=""/>
+                                <a href="#" class="book_title">部分诗学与普通读者</a>
+                                <p class="book_author">许志强</p>
+                            </li>
+                            <li>
+                                <img class="book_img" src="images/tab/leterature/7.jpg" alt=""/>
+                                <a href="#" class="book_title">不要温顺地走进那个良宵</a>
+                                <p class="book_author">[英] 狄兰·托马斯</p>
+                            </li>
+                            <li>
+                                <img class="book_img" src="images/tab/leterature/8.jpg" alt=""/>
+                                <a href="#" class="book_title">说不尽的废名</a>
+                                <p class="book_author">陈建军</p>
+                            </li>
+                            <li>
+                                <img class="book_img" src="images/tab/leterature/9.jpg" alt=""/>
+                                <a href="#" class="book_title">八旗心象</a>
+                                <p class="book_author">刘大先</p>
+                            </li>
+                            <li>
+                                <img class="book_img" src="images/tab/leterature/10.jpg" alt=""/>
+                                <a href="#" class="book_title">切境</a>
+                                <p class="book_author">庆山</p>
+                            </li>
+                        </ul>
+                    </li>
+
+                </ul>
+                <div class="btn-group">
+                    <span class="btn-left">&lt;</span>
+                    <ul class="dots">
+                        <li class="active"></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                    <span class="btn-right">&gt;</span>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <!-- 新书速递-->
+
+    <!--banner-->
+    <div class="banner">
+        <a href="#">
+            <img src="images/banner/2.jpg" alt=""/>
+        </a>
+    </div>
+
+    <!-- 好书精选-->
+    <div class="select_books">
+        <h1 class="sub-title">好书精选</h1>
+
+        <!-- 排行榜 -->
+        <div class="book_rank">
+            <ul>
+                <li class="book_rank_title">豆瓣 Top 250</li>
+                <li>
+                    <span>1.</span>
+                    <a href="#">红楼梦</a>
+                    <p>[清] 曹雪芹 著</p>
+                </li>
+                <li>
+                    <span>2.</span>
+                    <a href="#">活着</a>
+                    <p>余华</p>
+                </li>
+                <li>
+                    <span>3.</span>
+                    <a href="#">百年孤独</a>
+                    <p>[哥伦比亚] 加西亚·马尔克斯</p>
+                </li>
+                <li>
+                    <span>4.</span>
+                    <a href="#">1984</a>
+                    <p>[英] 乔治·奥威尔</p>
+                </li>
+                <li>
+                    <span>5.</span>
+                    <a href="#">飘</a>
+                    <p>[美国] 玛格丽特·米切尔</p>
+                </li>
+                <li>
+                    <span>6.</span>
+                    <a href="#">三体全集 : 地球往事三部曲</a>
+                    <p>刘慈欣</p>
+                </li>
+                <li>
+                    <span>7.</span>
+                    <a href="#">三国演义（全二册）</a>
+                    <p>[明] 罗贯中</p>
+                </li>
+                <li>
+                    <span>8.</span>
+                    <a href="#">白夜行</a>
+                    <p>[日] 东野圭吾</p>
+                </li>
+                <li>
+                    <span>9.</span>
+                    <a href="#">小王子</a>
+                    <p>[法] 圣埃克苏佩里</p>
+                </li>
+                <li>
+                    <span>10.</span>
+                    <a href="#">福尔摩斯探案全集（上中下）</a>
+                    <p>[英] 阿·柯南道尔</p>
+                </li>
+                <li>
+                    <span>11.</span>
+                    <a href="#">房思琪的初恋乐园</a>
+                    <p>林奕含</p>
+                </li>
+            </ul>
+        </div>
+
+        <!--tabs-->
+        <div class="tab_content">
+            <ul class="tabs">
+                <li>
+                    <a href="#" name=".tab1_1">全部</a>
+                </li>
+                <li>
+                    <a href="#" name=".tab1_2">小说</a>
+                </li>
+                <li>
+                    <a href="#" name=".tab1_3">文学</a>
+                </li>
+            </ul>
+
+            <div class="content">
+                <div class="tab1_1">
+                    <ul>
+                        <li>
+                            <img class="book_img" src="images/tab/all/1.jpg" alt=""/>
+                            <a href="#" class="book_title">观看绘画</a>
+                            <p class="book_author">[英]肯尼斯·克拉克（Kenneth Clark）</p>
+                        </li>
+                        <li>
+                            <img class="book_img" src="images/tab/all/2.jpg" alt=""/>
+                            <a href="#" class="book_title">山魈考残编</a>
+                            <p class="book_author">黎幺</p>
+                        </li>
+                        <li>
+                            <img class="book_img" src="images/tab/all/3.jpg" alt=""/>
+                            <a href="#" class="book_title">张医生与王医生</a>
+                            <p class="book_author">伊险峰 / 杨樱</p>
+                        </li>
+                        <li>
+                            <img class="book_img" src="images/tab/all/4.jpg" alt=""/>
+                            <a href="#" class="book_title">森林之花</a>
+                            <p class="book_author">[英] 玛格丽特·米 </p>
+                        </li>
+                        <li>
+                            <img class="book_img" src="images/tab/all/5.jpg" alt=""/>
+                            <a href="#" class="book_title">身体、空间与后现代性</a>
+                            <p class="book_author">汪民安</p>
+                        </li>
+                        <li>
+                            <img class="book_img" src="images/tab/all/6.jpg" alt=""/>
+                            <a href="#" class="book_title">劫后“天堂”</a>
+                            <p class="book_author">巫仁恕</p>
+                        </li>
+                        <li>
+                            <img class="book_img" src="images/tab/all/7.jpg" alt=""/>
+                            <a href="#" class="book_title">全民基本收入</a>
+                            <p class="book_author">[比利时]菲利普·范·帕里斯</p>
+                        </li>
+                        <li>
+                            <img class="book_img" src="images/tab/all/8.jpg" alt=""/>
+                            <a href="#" class="book_title">茶叶与鸦片</a>
+                            <p class="book_author">仲伟民</p>
+                        </li>
+                        <li>
+                            <img class="book_img" src="images/tab/all/9.jpg" alt=""/>
+                            <a href="#" class="book_title">魔都镜像</a>
+                            <p class="book_author">徐静波 </p>
+                        </li>
+                        <li>
+                            <img class="book_img" src="images/tab/all/10.jpg" alt=""/>
+                            <a href="#" class="book_title">设计人类学</a>
+                            <p class="book_author">设计人类学</p>
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="tab1_2">
+                    <ul>
+                        <li>
+                            <img class="book_img" src="images/tab/novel/1.jpg" alt=""/>
+                            <a href="#" class="book_title">皮拉内西</a>
+                            <p class="book_author">[英国] 苏珊娜·克拉克 </p>
+                        </li>
+                        <li>
+                            <img class="book_img" src="images/tab/novel/2.jpg" alt=""/>
+                            <a href="#" class="book_title">死梦者之歌与阴郁的抄写员</a>
+                            <p class="book_author"> [美] 托马斯·里戈蒂 / Thomas</p>
+                        </li>
+                        <li>
+                            <img class="book_img" src="images/tab/novel/3.jpg" alt=""/>
+                            <a href="#" class="book_title">82年生的金智英</a>
+                            <p class="book_author">[韩]赵南柱 </p>
+                        </li>
+                        <li>
+                            <img class="book_img" src="images/tab/novel/4.jpg" alt=""/>
+                            <a href="#" class="book_title">被弃养的女孩</a>
+                            <p class="book_author">[意]多娜泰拉?迪皮耶特兰托尼奥</p>
+                        </li>
+                        <li>
+                            <img class="book_img" src="images/tab/novel/5.jpg" alt=""/>
+                            <a href="#" class="book_title">最后来的是乌鸦</a>
+                            <p class="book_author">[意] 伊塔洛·卡尔维诺</p>
+                        </li>
+                        <li>
+                            <img class="book_img" src="images/tab/novel/6.jpg" alt=""/>
+                            <a href="#" class="book_title">山魈考残编</a>
+                            <p class="book_author">黎幺</p>
+                        </li>
+                        <li>
+                            <img class="book_img" src="images/tab/novel/7.jpg" alt=""/>
+                            <a href="#" class="book_title">夜莺</a>
+                            <p class="book_author">[美]克莉丝汀·汉娜</p>
+                        </li>
+                        <li>
+                            <img class="book_img" src="images/tab/novel/8.jpg" alt=""/>
+                            <a href="#" class="book_title">米拉的猜想</a>
+                            <p class="book_author">[英] 安格斯·班克罗夫特</p>
+                        </li>
+                        <li>
+                            <img class="book_img" src="images/tab/novel/9.jpg" alt=""/>
+                            <a href="#" class="book_title">啊朋友再见</a>
+                            <p class="book_author">宋阿曼</p>
+                        </li>
+                        <li>
+                            <img class="book_img" src="images/tab/novel/10.jpg" alt=""/>
+                            <a href="#" class="book_title">白兔</a>
+                            <p class="book_author">[日] 伊坂幸太郎</p>
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="tab1_3">
+                    <ul>
+                        <li>
+                            <img class="book_img" src="images/tab/leterature/1.jpg" alt=""/>
+                            <a href="#" class="book_title">莎士比亚、乌托邦与革命</a>
+                            <p class="book_author">张沛</p>
+                        </li>
+                        <li>
+                            <img class="book_img" src="images/tab/leterature/2.jpg" alt=""/>
+                            <a href="#" class="book_title">水浒传的诞生</a>
+                            <p class="book_author">孙述宇</p>
+                        </li>
+                        <li>
+                            <img class="book_img" src="images/tab/leterature/3.jpg" alt=""/>
+                            <a href="#" class="book_title">见笑集</a>
+                            <p class="book_author">黄永玉</p>
+                        </li>
+                        <li>
+                            <img class="book_img" src="images/tab/leterature/4.jpg" alt=""/>
+                            <a href="#" class="book_title">我身体里的人造星星</a>
+                            <p class="book_author">[爱尔兰] 希内德·格利森 </p>
+                        </li>
+                        <li>
+                            <img class="book_img" src="images/tab/leterature/5.jpg" alt=""/>
+                            <a href="#" class="book_title">小说现代中国</a>
+                            <p class="book_author"> 杨早 / 孟岳 / 黄山 / 凤梨</p>
+                        </li>
+                        <li>
+                            <img class="book_img" src="images/tab/leterature/6.jpg" alt=""/>
+                            <a href="#" class="book_title">部分诗学与普通读者</a>
+                            <p class="book_author">许志强</p>
+                        </li>
+                        <li>
+                            <img class="book_img" src="images/tab/leterature/7.jpg" alt=""/>
+                            <a href="#" class="book_title">不要温顺地走进那个良宵</a>
+                            <p class="book_author">[英] 狄兰·托马斯</p>
+                        </li>
+                        <li>
+                            <img class="book_img" src="images/tab/leterature/8.jpg" alt=""/>
+                            <a href="#" class="book_title">说不尽的废名</a>
+                            <p class="book_author">陈建军</p>
+                        </li>
+                        <li>
+                            <img class="book_img" src="images/tab/leterature/9.jpg" alt=""/>
+                            <a href="#" class="book_title">八旗心象</a>
+                            <p class="book_author">刘大先</p>
+                        </li>
+                        <li>
+                            <img class="book_img" src="images/tab/leterature/10.jpg" alt=""/>
+                            <a href="#" class="book_title">切境</a>
+                            <p class="book_author">庆山</p>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+        <!--tabs-->
+    </div>
+
+</div>
+
+<div class="footer">
+    <p class="motto">宠辱不惊，闲看书卷奥秘，去留无意，漫随书卷人生。</p>
+    <p class="author">&copy; Made By 刘流</p>
+</div>
+
+<!-- Jquery 文件 -->
+<script src="js/jquery-3.6.0.js"></script>
+<!-- 导航栏 js 文件 -->
+<script src="js/nav.js"></script>
+<!-- 轮播图 js-->
+<script src="js/Slider.js"></script>
+<!-- scroll -->
+<script src="js/Scroll.js"></script>
+<!-- 新书速递轮播 js -->
+<script src="js/Slider_new_book.js"></script>
+<!-- tab.js -->
+<script src="js/tab.js"></script>
+
+</body>
+
+</html>

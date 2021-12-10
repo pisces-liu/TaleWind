@@ -1,0 +1,75 @@
+
+.nav {
+    width: 1200px;
+    height: 60px;
+    margin: 0 auto;
+}
+
+.nav .nav-left li {
+    width: 80px;
+    height: 60px;
+    float: left;
+    position: relative;
+    text-align: center;
+}
+
+.nav .nav-left li:hover {
+    background-color: rgb(52, 158, 105);
+}
+
+.nav .nav-left li a {
+    color: #ffffff;
+    display: inline-block;
+    text-align: center;
+}
+
+
+/*二次菜单部分样式*/
+
+.nav .nav-left .sub-item {
+    position: absolute;
+    height: 120px;
+    width: 100%;
+    background: #157658;
+    display: none;
+    z-index: 999;
+}
+
+.nav .nav-left .sub-item li {
+    height: 60px;
+    float: left;
+    width: 80px;
+    text-align: center;
+    z-index: 999;
+}
+
+
+/* 登录部分 start*/
+
+.nav .login {
+    width: 200px;
+    height: 60px;
+    float: right;
+}
+
+.nav .login li {
+    float: left;
+    width: 70px;
+    height: 60px;
+    padding-left: 0;
+    text-align: center;
+}
+
+.nav .login li a {
+    color: #fff;
+    display: inline-block;
+    height: 100%;
+    width: 70px;
+    text-align: center;
+}
+
+.nav .login li:hover {
+    background-color: rgb(52, 158, 105);
+}
+
+/*登录部分 end*/

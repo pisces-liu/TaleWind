@@ -1,0 +1,30 @@
+
+/* scroll start*/
+.scroll {
+	/* 因为要展示5张图片，所以这里设置为5个图片的宽度 */
+	width: 1120px;
+	/*高度设置为和图片的高度一样*/
+	height: 200px;
+	margin: 70px auto;
+	overflow: hidden;
+}
+
+.scroll_ul {
+	list-style: none;
+	/*有四张图片进行滚动，将 ul 设置为四张图片的大小*/
+	width: 2720px;
+	height: 200px;
+}
+
+.scroll_ul > .scroll_ul_li {
+	float: left;
+	margin-left: 20px;
+	cursor: pointer;
+}
+
+.scroll_ul > .scroll_ul_li > img {
+	width: 140px;
+	height: 200px;
+}
+
+/*scroll end*/

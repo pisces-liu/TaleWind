@@ -1,0 +1,169 @@
+
+/*好书精选 start*/
+
+.select_books {
+    width: 1200px;
+    height: 750px;
+    margin: 0 auto;
+}
+
+.tab_content {
+    float: right;
+    width: 700px;
+}
+
+.tabs {
+    overflow: hidden;
+    width: 700px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.tabs li {
+    float: left;
+    margin: 0 -15px 0 0;
+    border-bottom: 1px solid #157658;
+}
+
+.tabs a {
+    float: left;
+    position: relative;
+    padding: 0 10px;
+    height: 0;
+    line-height: 25px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    border-right: 30px solid transparent;
+    border-bottom: 25px solid #157658;
+    font-size: 12px;
+    border-bottom-color: #777 \9;
+    opacity: .5;
+    filter: alpha(opacity=30);
+}
+
+.tabs a:hover,
+.tabs a:focus {
+    border-bottom-color: #2ac7e1;
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+
+.tabs a:focus {
+    outline: 0;
+}
+
+.tabs .current {
+    z-index: 3;
+    border-bottom-color: #157658;
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+
+.select_books .content ul {
+    width: 700px;
+    height: 566px;
+    float: right;
+}
+
+.select_books .content ul li {
+    width: 115px;
+    height: 250px;
+    margin: 12px;
+    float: left;
+    position: relative;
+    left: 0;
+}
+
+.select_books .content ul li .book_img {
+    width: 130px;
+    height: 200px;
+    position: absolute;
+    top: 0;
+}
+
+.select_books .content ul li .book_title {
+    display: inline-block;
+    font-size: 14px;
+    height: 14px;
+    line-height: 14px;
+    color: #3377AA;
+    position: absolute;
+    bottom: 24px;
+    white-space: nowrap;
+    /* 规定文本是否折行 */
+    overflow: hidden;
+    /* 规定超出内容宽度的元素隐藏 */
+    text-overflow: ellipsis;
+    width: 100%;
+}
+
+.select_books .content ul li .book_author {
+    font-size: 14px;
+    height: 14px;
+    line-height: 14px;
+    position: absolute;
+    bottom: -10px;
+    white-space: nowrap;
+    /* 规定文本是否折行 */
+    overflow: hidden;
+    /* 规定超出内容宽度的元素隐藏 */
+    text-overflow: ellipsis;
+    width: 100%;
+}
+
+
+/*好书精选 end*/
+
+
+/* 精选排名  start*/
+.select_books .book_rank {
+    height: 700px;
+    width: 300px;
+    float: left;
+}
+
+.select_books .book_rank ul {
+    height: 700px;
+    width: 300px;
+}
+
+.select_books .book_rank ul li {
+    width: 300px;
+    height: 30px;
+    line-height: 30px;
+    margin-top: 16px;
+}
+
+.select_books .book_rank ul li span {
+    height: 12px;
+    font-size: 12px;
+    display: inline;
+}
+
+.select_books .book_rank ul li a {
+    color: #3377AA;
+    width: 300px;
+    height: 20px;
+    line-height: 20px;
+    font-size: 14px;
+}
+
+.select_books .book_rank ul li p {
+    font-size: 14px;
+    height: 18px;
+    line-height: 14px;
+    padding-left: 14px;
+    border-bottom: 1px dashed #ddd;
+}
+
+.select_books:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+/* 精选排名  end*/

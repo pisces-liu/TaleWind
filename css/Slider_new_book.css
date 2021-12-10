@@ -1,0 +1,139 @@
+.slider_new_book {
+    width: 700px;
+    height: 566px;
+    /*box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);*/
+    position: relative;
+    z-index: 9999;
+}
+
+.slider_new_book .slider_new_book_ul {
+    width: 100%;
+    height: 100%;
+}
+
+.slider_new_book .slider_new_book_ul .slider_new_book_ul_li {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: none;
+}
+
+.slider_new_book .slider_new_book_ul > li.active {
+    display: block;
+}
+
+/* ul 里面的书籍展示样式 */
+.new_book .right .slider_new_book_ul {
+    width: 700px;
+    height: 566px;
+}
+
+.new_book .right .inner_book_show > li {
+    width: 115px;
+    height: 250px;
+    margin: 12px;
+    float: left;
+    position: relative;
+    left: 0;
+}
+
+.new_book .right .inner_book_show > li .book_img {
+    width: 130px;
+    height: 200px;
+    position: absolute;
+    top: 0;
+}
+
+.new_book .right .inner_book_show > li .book_title {
+    display: inline-block;
+    font-size: 14px;
+    height: 30px;
+    color: #3377AA;
+    line-height: 30px;
+    position: absolute;
+    bottom: 20px;
+    white-space: nowrap;
+    /* 规定文本是否折行 */
+    overflow: hidden;
+    /* 规定超出内容宽度的元素隐藏 */
+    text-overflow: ellipsis;
+    width: 100%;
+}
+
+.new_book .right .inner_book_show > li .book_author {
+    font-size: 14px;
+    height: 14px;
+    line-height: 14px;
+    position: absolute;
+    bottom: -10px;
+    white-space: nowrap;
+    /* 规定文本是否折行 */
+    overflow: hidden;
+    /* 规定超出内容宽度的元素隐藏 */
+    text-overflow: ellipsis;
+    width: 100%;
+}
+
+/* 轮播图底部样式 */
+.new_book .right .btn-group {
+    width: 140px;
+    height: 20px;
+    line-height: 20px;
+    position: absolute;
+    bottom: -35px;
+    left: 40%;
+    display: inline-block;
+}
+
+.new_book .right .dots {
+    height: 20px;
+    width: 120px;
+    display: inline-block;
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+.new_book .right .btn-group .btn-left,
+.new_book .right .btn-group .btn-right {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    font-size: 20px;
+    text-align: center;
+    color: #fff;
+    background: #37A;
+    border-radius: 50%;
+    cursor: pointer;
+    font-family: "宋体",sans-serif;
+    z-index: 999;
+}
+
+.new_book .right .btn-group .btn-left {
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin-top: 0;
+}
+
+.new_book .right .btn-group .btn-right {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-top: 0;
+}
+
+.new_book .right .btn-group .dots {
+    top: 0;
+    height: 20px;
+    border-radius: 10px;
+}
+
+.new_book .right .btn-group .dots li{
+    margin: 0 4px;
+}
+
+.new_book .right .btn-group .dots li.active {
+    background: #37A;
+    /*background-color: rgba(255, 255, 255, .2);*/
+}
